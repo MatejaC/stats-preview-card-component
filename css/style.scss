@@ -104,13 +104,20 @@ body {
 }
 
 .image {
-  width: 327px;
+  max-width: 327px;
   height: 240px;
   border-radius: 8px 8px 0 0;
   -webkit-border-radius: 8px 8px 0 0;
   -moz-border-radius: 8px 8px 0 0;
   -ms-border-radius: 8px 8px 0 0;
   -o-border-radius: 8px 8px 0 0;
+  background-color: $accent-color;
+}
+
+.image img {
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  filter: contrast(0.8);
 }
 
 .heading {
@@ -148,13 +155,16 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.stats li:nth-of-type(2n){
-padding-bottom:1.5rem;
+.stats li:nth-of-type(2n) {
+  padding-bottom: 1.5rem;
 }
 
+.stats li:nth-of-type(5) {
+  text-transform: uppercase;
+}
 .stats__numbers {
   color: $white--main-heading-stats;
   font-family: $Inter;
@@ -178,15 +188,15 @@ padding-bottom:1.5rem;
 }
 
 .attribution {
-  color:$stat-heading-swhite;
+  color: $stat-heading-swhite;
   display: flex;
   flex-direction: row;
-  font-size: .675rem;
+  font-size: 0.675rem;
   text-align: center;
   justify-content: center;
   margin-top: 6rem;
-  margin-bottom: .4rem;
- 
+  margin-bottom: 0.4rem;
+
   & {
     .attribution a {
       color: hsl(228, 45%, 44%);
