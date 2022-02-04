@@ -103,7 +103,7 @@ body {
   background: $card-background;
 }
 
-.image {
+.card__image {
   max-width: 327px;
   height: 240px;
   border-radius: 8px 8px 0 0;
@@ -114,13 +114,13 @@ body {
   background-color: $accent-color;
 }
 
-.image img {
+.card__image img {
   mix-blend-mode: multiply;
   opacity: 0.9;
   filter: contrast(0.8);
 }
 
-.heading {
+.card__main-heading {
   font-family: $Inter;
   font-style: normal;
   font-weight: bold;
@@ -137,7 +137,7 @@ span {
   color: $accent-color;
 }
 
-.main-paragraph {
+.card__main-paragraph {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -149,7 +149,7 @@ span {
   margin-bottom: 2rem;
 }
 
-.stats ul {
+.card__main-stats ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -158,14 +158,14 @@ span {
   margin-bottom: 0.5rem;
 }
 
-.stats li:nth-of-type(2n) {
+.card__main-stats li:nth-of-type(2n) {
   padding-bottom: 1.5rem;
 }
 
-.stats li:nth-of-type(5) {
+.card__main-stats li:nth-of-type(5) {
   text-transform: uppercase;
 }
-.stats__numbers {
+.card__main-stats--numbers {
   color: $white--main-heading-stats;
   font-family: $Inter;
   font-weight: bold;
@@ -174,7 +174,7 @@ span {
   text-align: center;
 }
 
-.stats__text {
+.card__main-stats--text {
   color: $stat-heading-swhite;
   align-items: center;
   font-family: $Lexend-Deca;
@@ -201,5 +201,39 @@ span {
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .card {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__image {
+    width: 540px;
+    // height: 446px;
+    order: 2;
+    border-radius: 0 8px 8px 0;
+    -webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    -ms-border-radius: 0 8px 8px 0;
+    -o-border-radius: 0 8px 8px 0;
+    margin-right:10.3125rem;
+}
+
+  .card__main {
+    order: 1;
+  }
+
+  .card__main-heading {
+    font-size: 2.25rem;
+    line-height: 122%;
+    width: 403px;
+    margin: 4.43rem 5.9375rem 1.56rem 14.8rem;
+    text-align: left;
   }
 }
