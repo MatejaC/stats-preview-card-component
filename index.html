@@ -16,8 +16,11 @@
 <body>
   <div class="card" aria-hidden="true"">
 
-    <div class="card__image">
-    <img src="images/image-header-mobile.jpg" alt="three women sitting in an IT office" />
+    <div class=" card__image">
+    <picture>
+      <source media="(min-width:1110px)" srcset="images/image-header-desktop.jpg">
+      <img src="images/image-header-mobile.jpg" alt="three women sitting in an IT office">
+    </picture>
   </div>
 
   <div class="card__main">
@@ -31,9 +34,9 @@
       and overall efficiency.
     </div>
     <div class="card__main-stats">
-      <ul>
+      <ul class="card__main-stats--horizontally">
         <li class="card__main-stats--numbers">10k+</li>
-        <li class="card__main-stats--text">companies</li>
+        <li class="card__main-stats--text ">companies</li>
         <li class="card__main-stats--numbers">314</li>
         <li class="card__main-stats--text">templates</li>
         <li class="card__main-stats--numbers">12m+</li>
@@ -43,9 +46,9 @@
   </div>
   </div>
   <footer class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      href="https://github.com/MatejaC">Mateja Cimperšak</a>.
+    Challenge by&nbsp;
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. &nbsp; Coded by &nbsp;
+    <a href="https://github.com/MatejaC"> Mateja Cimperšak</a>.
   </footer>
 </body>
 
