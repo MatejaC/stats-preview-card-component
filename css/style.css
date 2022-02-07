@@ -147,7 +147,7 @@ span {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 167%;
   text-align: center;
   max-width: 264px;
@@ -237,15 +237,10 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .card__image {
-    width: 540px;
+    min-width: 540px;
+    min-height: 446px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -254,7 +249,6 @@ span {
     -moz-border-radius: 0 8px 8px 0;
     -ms-border-radius: 0 8px 8px 0;
     -o-border-radius: 0 8px 8px 0;
-    margin-right: 10.3125rem;
   }
   .card__main {
     -webkit-box-ordinal-group: 2;
@@ -264,9 +258,45 @@ span {
   .card__main-heading {
     font-size: 2.25rem;
     line-height: 122%;
-    width: 403px;
-    margin: 4.43rem 5.9375rem 1.56rem 14.8rem;
+    min-width: 403px;
+    margin: 4.4375rem 5.9375rem 1.56rem 4.5rem;
     text-align: left;
+  }
+  .card__main-paragraph {
+    max-width: 374px;
+    margin: 0 0 4rem 4.5rem;
+    text-align: left;
+  }
+  .card__main-stats {
+    display: table;
+    margin: 0 0 3rem 4.4rem;
+  }
+  .card__main-stats ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .card__main-stats--horizontally ul {
+    display: inline-block;
+    list-style: none;
+  }
+  ul.card__main-stats--horizontally li {
+    display: inline;
+    float: left;
+  }
+  .card__main-stats li:nth-of-type(2n) {
+    padding-top: 1.8rem;
+    padding-right: 3.5rem;
+    margin-left: -3.6rem;
+  }
+  .card__main-stats li:nth-of-type(4) {
+    margin-left: -2.7rem;
+  }
+  .card__main-stats li:nth-of-type(6) {
+    margin-left: -4.06rem;
+  }
+  .attribution {
+    margin-top: 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
